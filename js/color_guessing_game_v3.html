@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+    var target;
+    var target_index;
+    var colors = ["blue", "cyan", "gold","gray","green","magenta","orange","red","white","yellow","Amazon","Amazonite",
+                 "Black","Bitter Lime","Blush","Bright Green","Bright Lilac","Bubble Gum","Cadmium Red","Cardinal","Ceil","CG Blue"
+                 ,"Chinese Gold","Cinnabar","Corn","Cyan","Dark Cerulean","Flirt","French Fuchsia","French Mauve","Fuchsia Rose",
+                 "Fuchsia Rose","Flame","Fire Opal","Eucalyptus","Electric Cyan","Drab"];
+    var guess_input;
+    var guess_input_index;
+    var finished = false;
+    var guess = 0;
+    target = colors[Math.floor(Math.random() * colors.length)];
+    target_index = colors.indexOf(target);
+    document.body.style.backgroundColor = "white";
+    </script>
+    <script src="color_guessing.js"></script>
+  </head>
+  <body onload="do_game()">
+
+  </body>
+</html>
